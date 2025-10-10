@@ -12,7 +12,6 @@ description: css file for about.html page
     border: 2px solid black;
     border-radius: 12px;
     padding: 10px 20px;
-    background-color: #f5f5f5;
 }
 #interests-table th, td{
     border: 1px solid black;
@@ -26,13 +25,7 @@ description: css file for about.html page
     font-size: 1.5em;
     color: black;
 }
-footer{
-    text-align: center;
-    padding: 10px 0;
-    background-color: gray;
-    color: white;
-    margin-top: 20px;
-}
+
 #h1header{
     text-align: center;
     margin-top: 20px;
@@ -43,7 +36,4 @@ footer{
     text-align: center;
     font-size: 1.2em;
     color: dimgray;
-}
-body{
-    background-color: paleturquoise;
 }
