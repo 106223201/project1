@@ -35,9 +35,11 @@ body {
 /* Navigation */
 
 .logo {
-    width: 80px;
+    width: 8rem;
     height: auto;
-}
+    margin-left: 5px;
+    justify-content: center;
+  }
 
 #nav-bar{
     padding: 0.8em 0.8em;
