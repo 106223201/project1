@@ -160,7 +160,6 @@ body{
 }
 
 
-
 /* Footer */
 footer {
   text-align: left;
@@ -170,3 +169,6 @@ footer {
   margin-top: 10px;
 }
 
+footer p {
+color:white
+}
