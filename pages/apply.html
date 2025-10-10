@@ -10,96 +10,117 @@
     <title>Job Application Page</title>
 </head>
 <body>
-    <nav id="nav-bar">
-        <a href="index.html"><img class="logo" src ="/assets/images\epass.png"></a></li>
+    <!-- navi bar -->
+    <header>
+        <nav id="nav-bar">
+            <a href="index.html"><img class="logo" src ="/assets/images\epass.png"></a></li>
 
-        <!-- menu bars -->
-        <ul id="nav-menu">
-            <li id="nav-item"><a id="nav-link" href="jobs.html">Jobs</a></li>
-            <li id="nav-item"><a id="nav-link" href="apply.html">Apply</a></li>
-            <li id="nav-item"><a id="nav-link" href="about.html">About</a></li>
-            <li id="nav-item"><a id="nav-link" href="mailto:info@epasssoftware.com.au">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- job form -->
-    <section id="application">
-        <form action="" method="post">
-            <h1>Job Application</h1>
-            <fieldset id="jobsec">
-                <legend>Job Selection</legend>
-                <label for="refnum">Job Reference Numbers</label>
-                <select name="Jobs" id="refnum">
-                    <option value="G01">Software Developer</option>
-                    <option value="G02">Network Administrator</option>
-                    <option value="G03">Data Analyst</option>
-                    <option value="G04">Cybersecurity Specialist</option>
-                    <option value="G05">IT Support Technician</option>
-                    <option value="G06">Cloud Engineer</option>
-                    <option value="G07">AI/ML Engineer</option>
-                    <option value="G08">Data Scientist</option>
-                    <option value="G09">Data Engineer</option>
-                </select>
-            </fieldset>
-            <fieldset id="info">
-                <legend>Details</legend>
-                <label for="fname">First Name</label>
-                <input type="text" name="first" id="fname" required pattern="[A-Za-z]{1,20}">
-                <label for="lname">Last Name</label>
-                <input type="text" name="last" id="lname" required pattern="[A-Za-z]{1,20}">
-                <label for="dob">Date of Birth</label>
-                <input type="text" name="dob" id="dob" required pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|[1][0-2])/\d{4}">
-            </fieldset>
-            <fieldset id="gend">
-                <legend>Gender</legend>
-                <input type="radio" name="gender" id="male" required="required"><label for="male">Male</label>
-                <input type="radio" name="gender" id="female"><label for="female">Female</label>
-            </fieldset>
-            <fieldset id="address-info">
-                <legend>Address</legend>
-                <label for="street">Street Address</label>
-                <input type="text" name="strtadd" id="street" required pattern=".{1,40}">
-                <label for="town">Suburb/town</label>
-                <input type="text" name="subtown" id="town" required pattern=".{1,40}">
-                <label for="state">State</label>
-                <select name="statelist" id="state">
-                    <option value="VIC">Victoria</option>
-                    <option value="NSW">New South Wales</option>
-                    <option value="QLD">Queensland</option>
-                    <option value="NT">Northern Territory</option>
-                    <option value="WA">Western Australia</option>
-                    <option value="SA">South Australia</option>
-                    <option value="TAS">Tasmania</option>
-                    <option value="ACT">Australian Capital Territory</option>
-                </select>
-                <label for="pcode">Postcode</label>
-                <input type="text" name="postalcode" id="pcode" required pattern="[0-9]{4}">
-            </fieldset>
-            <fieldset id="contact-info">
-                <legend>Contact</legend>
-                <label for="mail">Email Address</label>
-                <input type="text" name="email" id="mail" required pattern="^[A-Za-z0-9]+([._-][A-Za-z0-9]+)*@[A-Za-z0-9]+([.-][A-Za-z0-9]+)*\.[a-z]{2,}$">
-                <label for="pnum">Phone Number</label>
-                <input type="text" name="phone" id="pnum" required pattern="^[0-9 ]{8,12}$">
-            </fieldset>
-            <fieldset id="req">
-                <legend>Requirement</legend>
-                <label for="techlist">Required Technical List</label>
-                <p><input type="checkbox" name="prg" id="programming" required><label for="programming">Programming Languages</label></p>
-                <p><input type="checkbox" name="data" id="datasc"><label for="datasc">Data Science</label></p>
-                <p><input type="checkbox" name="cysec" id="cysec"><label for="cysec">Cyber Security</label></p>
-                <p><input type="checkbox" name="manage" id="project"><label for="project">Project Management</label></p>
-                <p><input type="checkbox" name="soft" id="Software"><label for="Software">Software Development</label></p>
-                <p><input type="checkbox" name="writing" id="techwriting"><label for="techwriting">Technical Writing</label></p>
-                <label for="otherskill">Other Skills</label>
-                <textarea name="skill" id="otherskill"></textarea>
-            </fieldset>
-            <input type="submit" value="Apply" id="submit">
+            <!-- menu bars -->
+            <ul id="nav-menu">
+                <li id="nav-item"><a id="nav-link" href="jobs.html">Jobs</a></li>
+                <li id="nav-item"><a id="nav-link" href="apply.html">Apply</a></li>
+                <li id="nav-item"><a id="nav-link" href="about.html">About</a></li>
+                <li id="nav-item"><a id="nav-link" href="mailto:info@epasssoftware.com.au">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- application form -->
+    <section id="apply-form">
+        <form action="">
+            <h2>Job Application</h2>
+            <section id="genral">
+                <section id="job-selection">
+                    <label for="refnum">Job Reference Numbers</label>
+                    <select name="Jobs" id="refnum">
+                        <option value="G01">Software Developer</option>
+                        <option value="G02">Network Administrator</option>
+                        <option value="G03">Data Analyst</option>
+                        <option value="G04">Cybersecurity Specialist</option>
+                        <option value="G05">IT Support Technician</option>
+                        <option value="G06">Cloud Engineer</option>
+                        <option value="G07">AI/ML Engineer</option>
+                        <option value="G08">Data Scientist</option>
+                        <option value="G09">Data Engineer</option>
+                    </select>
+                </section>
+                <section id="name">
+                    <section id="first-name">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="first" id="fname" required pattern="[A-Za-z]{1,20}">
+                    </section>
+                    <section id="last-name">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="last" id="lname" required pattern="[A-Za-z]{1,20}">
+                    </section>
+                </section>
+                <section id="general-info">
+                    <section id="date-of-birth">
+                        <label for="dob">Date of Birth</label>
+                        <input type="text" name="dob" id="dob" required pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|[1][0-2])/\d{4}">
+                    </section>
+                    <section id="gender">
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gender" id="male" required="required"><label for="male">Male</label>
+                        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                </section>
+                    </section>
+                </section>
+                <section id="address">
+                    <label for="street">Street Address</label>
+                    <input type="text" name="strtadd" id="street" required pattern=".{1,40}">
+                    <label for="town">Suburb/town</label>
+                    <input type="text" name="subtown" id="town" required pattern=".{1,40}">
+                </section>
+                <section id="state">
+                    <label for="state">State</label>
+                    <select name="statelist" id="state">
+                        <option value="VIC">Victoria</option>
+                        <option value="NSW">New South Wales</option>
+                        <option value="QLD">Queensland</option>
+                        <option value="NT">Northern Territory</option>
+                        <option value="WA">Western Australia</option>
+                        <option value="SA">South Australia</option>
+                        <option value="TAS">Tasmania</option>
+                        <option value="ACT">Australian Capital Territory</option>
+                    </select>
+                    <label for="pcode">Postcode</label>
+                    <input type="text" name="postalcode" id="pcode" required pattern="[0-9]{4}">
+                </section>
+                <section id="contact">
+                    <label for="mail">Email Address</label>
+                    <input type="text" name="email" id="mail" required pattern="^[A-Za-z0-9]+([._-][A-Za-z0-9]+)*@[A-Za-z0-9]+([.-][A-Za-z0-9]+)*\.[a-z]{2,}$">
+                    <label for="pnum">Phone Number</label>
+                    <input type="text" name="phone" id="pnum" required pattern="^[0-9 ]{8,12}$">
+                </section>
+                <section id="requirement">
+                    <label for="techlist">Required Technical List</label>
+                    <section id="skill-cols">
+                        <section id="skill-col-1">
+                            <p><input type="checkbox" name="prg" id="programming" required><label for="programming">Programming Languages</label></p>
+                            <p><input type="checkbox" name="data" id="datasc"><label for="datasc">Data Science</label></p>
+                            <p><input type="checkbox" name="cysec" id="cysec"><label for="cysec">Cyber Security</label></p>
+                        </section>
+                        <section id="skill-col-2">
+                            <p><input type="checkbox" name="manage" id="project"><label for="project">Project Management</label></p>
+                            <p><input type="checkbox" name="soft" id="Software"><label for="Software">Software Development</label></p>
+                            <p><input type="checkbox" name="writing" id="techwriting"><label for="techwriting">Technical Writing</label></p>
+                        </section>
+                    </section>
+                </section>
+                <section id="other-skill">
+                    <label for="otherskill">Other Skills</label>
+                    <textarea name="skill" id="otherskill"></textarea>
+                </section>
+                <input type="submit" value="Apply" id="submit">
+            </section>
         </form>
     </section>
 
-      <footer>
-        <p>&copy; 2025 Cracked Hackers. All rights reserved.</p>
+    <!-- footer -->
+    <footer>
+      <a href="https://kenzienguyen22.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiMDMxZDQwMjA1OGE5NDUwMjhmMDY3MjZmY2MyNzNlZTYiLCJwIjoiaiJ9">
+      <p>&copy; 2025 Cracked Hackers. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

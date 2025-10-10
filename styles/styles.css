@@ -34,10 +34,6 @@ body {
 
 /* Navigation */
 
-body{
-    background-color: rgba(235, 245, 245, 0.171);
-}
-
 .logo {
     width: 80px;
     height: auto;
@@ -51,18 +47,13 @@ body{
     align-items: center;
     background-color: #000000d4;  
     height: 40px;
-    position:sticky;
-    top:0;
-    bottom:0;
+    position: sticky;
+    top: 0;
 }
 #nav-bar #nav-menu a{
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-#nav-bar #nav-menu .logo{
-    transition: 0.5s ease;
-}
-
 #nav-bar #nav-menu{
     display: flex;
     justify-content: flex-end;
@@ -73,7 +64,7 @@ body{
 #nav-bar #nav-menu #nav-link{
     padding: 10px 18px;
     border-radius: 18px;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
 }
 #nav-bar #nav-menu #nav-link:hover{
     background-color:rgba(47, 79, 79, 0.637);
@@ -166,7 +157,7 @@ footer {
   background-color: #1f2937b9;
   color: rgb(255, 255, 255);
   padding: 5px 20px;
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 footer p {
