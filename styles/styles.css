@@ -34,10 +34,6 @@ body {
 
 /* Navigation */
 
-body{
-    background-color: rgba(235, 245, 245, 0.171);
-}
-
 .logo {
     width: 80px;
     height: auto;
@@ -52,15 +48,11 @@ body{
     background-color: #000000d4;  
     height: 40px;
     position:sticky;
-    top:0;
-    bottom:0;
 }
+
 #nav-bar #nav-menu a{
     color: rgb(255, 255, 255);
     text-decoration: none;
-}
-#nav-bar #nav-menu .logo{
-    transition: 0.5s ease;
 }
 
 #nav-bar #nav-menu{
