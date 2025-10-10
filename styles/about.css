@@ -37,3 +37,35 @@ description: css file for about.html page
     font-size: 1.2em;
     color: dimgray;
 }
+
+/*Member Intro Section*/
+
+.social {
+    padding-top: 10px;
+    width: 2rem;
+    height: auto;
+}
+
+.members {
+  padding: 50px;
+  text-align: center;
+}
+
+.members h2 {
+  font-weight: 600;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.member-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
