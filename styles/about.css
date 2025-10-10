@@ -1,0 +1,49 @@
+/*
+author: Nguyen Tuan Anh
+
+created: 7/10/2025
+
+last modified: 10/10/2025
+
+description: css file for about.html page
+*/
+#interests-table{
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+#interests-table th, td{
+    border: 1px solid black;
+    padding: 8px 12px;
+    text-align: center;
+}
+.h3c{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: black;
+}
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background-color: gray;
+    color: white;
+    margin-top: 20px;
+}
+#h1header{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: darkslategray;
+}
+#pheader{
+    text-align: center;
+    font-size: 1.2em;
+    color: dimgray;
+}
+body{
+    background-color: paleturquoise;
+}
