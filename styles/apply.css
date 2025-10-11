@@ -124,7 +124,7 @@ form{
 /* State */
 #state-general{
     display: flex;
-    gap: 102px;
+    gap: 120px;
     margin-top: 20px;
 }
 #post-code, #state {
