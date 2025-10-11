@@ -15,34 +15,32 @@
 
             <!-- menu bars -->
             <ul id="nav-menu">
-                <li><a id="nav-link" href="index.html">Home</a></li>
-                <li><a id="nav-link" href="jobs.html">Jobs</a></li>
-                <li><a id="nav-link" href="apply.html">Apply</a></li>
-                <li><a id="nav-link" href="about.html">About</a></li>
-                <li><a id="nav-link" href="mailto:info@epasssoftware.com.au">Contact</a></li>
+                <li id="nav-item"><a id="nav-link" href="jobs.html">Jobs</a></li>
+                <li id="nav-item"><a id="nav-link" href="apply.html">Apply</a></li>
+                <li id="nav-item"><a id="nav-link" href="about.html">About</a></li>
+                <li id="nav-item"><a id="nav-link" href="mailto:info@epasssoftware.com.au">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- heading -->
+     <section id="heading">
+        <section id="job-label">
+            <h1>Data Analyst</h1>
+        </section>
+        <section id="heading-list">
+            <ul>
+                <li><p>Location - Australia</p></li>
+                <li><p>Employment Type - Permanent</p></li>
+            </ul>
+        </section>
+     </section>
+
     <!-- application form -->
     <section id="apply-form">
         <form action="">
-            <h2>Job Application</h2>
-            <section id="genral">
-                <section id="job-selection">
-                    <label for="refnum">Job Reference Numbers</label>
-                    <select name="Jobs" id="refnum">
-                        <option value="G01">Software Developer</option>
-                        <option value="G02">Network Administrator</option>
-                        <option value="G03">Data Analyst</option>
-                        <option value="G04">Cybersecurity Specialist</option>
-                        <option value="G05">IT Support Technician</option>
-                        <option value="G06">Cloud Engineer</option>
-                        <option value="G07">AI/ML Engineer</option>
-                        <option value="G08">Data Scientist</option>
-                        <option value="G09">Data Engineer</option>
-                    </select>
-                </section>
+            <h2>Apply for this job</h2>
+            <section id="general">
                 <section id="name">
                     <section id="first-name">
                         <label for="fname">First Name</label>
@@ -60,37 +58,50 @@
                     </section>
                     <section id="gender">
                         <label for="gender">Gender</label>
-                        <input type="radio" name="gender" id="male" required="required"><label for="male">Male</label>
-                        <input type="radio" name="gender" id="female"><label for="female">Female</label>
-                </section>
+                        <section id="gender-radio">
+                            <input type="radio" name="gender" id="male" required="required"><label for="male">Male</label>
+                            <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                        </section>
                     </section>
                 </section>
                 <section id="address">
-                    <label for="street">Street Address</label>
-                    <input type="text" name="strtadd" id="street" required pattern=".{1,40}">
-                    <label for="town">Suburb/town</label>
-                    <input type="text" name="subtown" id="town" required pattern=".{1,40}">
+                    <section id="street-address">
+                        <label for="street">Street Address</label>
+                        <input type="text" name="strtadd" id="street" required pattern=".{1,40}">
+                    </section>
+                    <section id="suburb-town">
+                        <label for="town">Suburb/town</label>
+                        <input type="text" name="subtown" id="town" required pattern=".{1,40}">
+                    </section>
                 </section>
-                <section id="state">
-                    <label for="state">State</label>
-                    <select name="statelist" id="state">
-                        <option value="VIC">Victoria</option>
-                        <option value="NSW">New South Wales</option>
-                        <option value="QLD">Queensland</option>
-                        <option value="NT">Northern Territory</option>
-                        <option value="WA">Western Australia</option>
-                        <option value="SA">South Australia</option>
-                        <option value="TAS">Tasmania</option>
-                        <option value="ACT">Australian Capital Territory</option>
-                    </select>
-                    <label for="pcode">Postcode</label>
-                    <input type="text" name="postalcode" id="pcode" required pattern="[0-9]{4}">
+                <section id="state-general">
+                    <section id="state-selection">
+                        <label for="state">State</label>
+                        <select name="statelist" id="state">
+                            <option value="VIC">Victoria</option>
+                            <option value="NSW">New South Wales</option>
+                            <option value="QLD">Queensland</option>
+                            <option value="NT">Northern Territory</option>
+                            <option value="WA">Western Australia</option>
+                            <option value="SA">South Australia</option>
+                            <option value="TAS">Tasmania</option>
+                            <option value="ACT">Australian Capital Territory</option>
+                        </select>
+                    </section>
+                    <section id="post-code">
+                        <label for="pcode">Postcode</label>
+                        <input type="text" name="postalcode" id="pcode" required pattern="[0-9]{4}">
+                    </section>
                 </section>
                 <section id="contact">
-                    <label for="mail">Email Address</label>
-                    <input type="text" name="email" id="mail" required pattern="^[A-Za-z0-9]+([._-][A-Za-z0-9]+)*@[A-Za-z0-9]+([.-][A-Za-z0-9]+)*\.[a-z]{2,}$">
-                    <label for="pnum">Phone Number</label>
-                    <input type="text" name="phone" id="pnum" required pattern="^[0-9 ]{8,12}$">
+                    <section id="email-address">
+                        <label for="mail">Email Address</label>
+                        <input type="text" name="email" id="mail" required pattern="^[A-Za-z0-9]+([._-][A-Za-z0-9]+)*@[A-Za-z0-9]+([.-][A-Za-z0-9]+)*\.[a-z]{2,}$">
+                    </section>
+                    <section id="phone-number">
+                        <label for="pnum">Phone Number</label>
+                        <input type="text" name="phone" id="pnum" required pattern="^[0-9 ]{8,12}$">
+                    </section>
                 </section>
                 <section id="requirement">
                     <label for="techlist">Required Technical List</label>

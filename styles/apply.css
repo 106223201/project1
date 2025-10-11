@@ -5,9 +5,20 @@ created: October 7, 2025
 last modified: October 9, 2025
 description: apply.html
 */
-/* body */
-body{
-    background-color: rgb(255, 255, 255);
+/* heading */
+#heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+#heading-list ul li{
+    list-style-type: disc;
+}
+#heading-list ul{
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+    padding-top: 25px;
 }
 
 /* navbar */
@@ -21,16 +32,13 @@ header{
     justify-content: center;
 }
 form{
-    border: 0.5px solid black;
+    box-shadow: rgba(115, 39, 64, 0.14) 0px 10px 21px 4px;
     border-radius: 20px;
     padding: 40px 60px 25px;
-    margin: 50px 0;
+    margin-bottom: 50px;
+    width: 40%;
 }
-/* selection layout */
-#job-selection{
-    display: flex;
-    flex-direction: column;
-}
+
 /* name layout */
 #name{
     display: flex;
@@ -53,12 +61,142 @@ form{
 #first-name input:hover, #last-name input:hover{
     transform: scaleX(1.1);
 }
+
+/* general-info */
+#general-info{
+    display: flex;
+    gap: 123px;
+    margin-top: 20px;
+}
+#male, #female{
+    margin-left: 10px;
+}
+#gender{
+    display: flex;
+    flex-direction: column;
+     margin-top: -10px;
+}
+#gender label{
+    padding-left: 10px;
+}
+#date-of-birth{
+    display: flex;
+    flex-direction: column;
+}
+#dob{
+    width: 170%;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom: 1.5px solid black;
+    background: transparent;
+    transition: 0.3s ease;
+    padding: 5px;
+}
+#dob:hover{
+    transform: scaleX(1.1);
+}
+
+/* Address */
+#address{
+    display: flex;
+    gap: 130px;
+    margin-top: 20px;
+}
+#street-address, #suburb-town{
+    display: flex;
+    flex-direction: column;
+}
+#street-address input, #suburb-town input{
+    width: 170%;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom: 1.5px solid black;
+    background: transparent;
+    transition: 0.3s ease;
+    padding: 5px;
+}
+#street-address input:hover, #suburb-town input:hover{
+    transform: scaleX(1.1);
+}
+
+/* State */
+#state-general{
+    display: flex;
+    gap: 102px;
+    margin-top: 20px;
+}
+#post-code, #state {
+    display: flex;
+    flex-direction: column;
+}
+#post-code input{
+    width: 170%;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom: 1.5px solid black;
+    background: transparent;
+    transition: 0.3s ease;
+    padding: 5px;
+}
+#post-code input:hover{
+    transform: scaleX(1.1);
+}
+#state-selection select{
+    margin-top: 5px;
+    width: 145%;
+}
+
+/* contact */
+#contact{
+    display: flex;
+    gap: 130px;
+    margin-top: 20px;
+}
+#email-address, #phone-number{
+    display: flex;
+    flex-direction: column;
+}
+#email-address input, #phone-number input{
+    width: 170%;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom: 1.5px solid black;
+    background: transparent;
+    transition: 0.3s ease;
+    padding: 5px;
+}
+#email-address input:hover, #phone-number input:hover{
+    transform: scaleX(1.1);
+}
+
+/* requirement */
+#requirement{
+    margin-top: 20px;
+}
 #skill-cols{
     display: flex;
+    gap: 62px;
 }
+#skill-col-1 label, #skill-col-2 label{
+    margin-left: 10px;
+}
+
+/* other skill */
 #other-skill{
     display: flex;
     flex-direction: column;
 }
 
-/* footer */
+/* button */
+#submit{
+    width: 200px;
+    height: 52px;
+    margin-top: 20px;
+    border-radius: 100px;
+    border: none;
+    font-size: 15px;
+}
