@@ -7,37 +7,118 @@ last modified: 10/10/2025
 
 description: css file for about.html page
 */
+
+/*Table Section*/
 #interests-table{
     margin: 0 auto;
     border: 2px solid black;
     border-radius: 12px;
     padding: 10px 20px;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin-bottom: 50px;
+    
 }
 #interests-table th, td{
     border: 1px solid black;
     padding: 8px 12px;
     text-align: center;
 }
-.h3c{
-    text-align: center;
-    margin-top: 20px;
+
+#h3w{
+    font-weight: bold;
     margin-bottom: 10px;
     font-size: 1.5em;
-    color: black;
+    color: darkslategray;
+    text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 1rem;
 }
 
-#h1header{
+th, td {
+  border: 1px solid black;
+  padding: 12px 16px;
+}
+
+th {
+  background-color: #73c8ec;
+  font-weight: bold;
+  text-align: center;
+  color: #1f3b3b;
+}
+
+td {
+  background-color: #fff;
+}
+
+/* Table Hover Effect */
+tr:hover td {
+  background-color: #73c8ec;
+  transition: 0.2s ease-in-out;
+}
+/*Body Section*/
+#h1body{
     text-align: center;
     margin-top: 20px;
     font-size: 2em;
     color: darkslategray;
 }
-#pheader{
+#pbody{
     text-align: center;
     font-size: 1.2em;
     color: dimgray;
 }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0px;
+}
+.group-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.group-container:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px #00bcd4; 
+}
+h1, h2 {
+  text-align: center;
+  color: #1f3b3b;
+  margin-bottom: 20px;
+}
+.group-info p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #444;
+}
 
+.group-info strong {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Hiệu ứng gạch chân nhẹ khi hover text */
+.group-info li:hover {
+  color: #1f3b3b;
+  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  transform: translateX(4px);
+  transition: 0.3s ease;
+}
 /*Member Intro Section*/
 
 .social {
@@ -68,4 +149,47 @@ description: css file for about.html page
   border-radius: 15px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
+.member-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px #00bcd4; 
+  transition: 0.3s ease-in-out;
+}
+#student-ids {
+  float: right;
+  width: 35%;
+  margin-left: 20px;
+}
+/*Members' contributions */
+#contribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#dd{
+    text-align: center;
+}
+dl {
+    border: 3x double #00bcd4;
+    padding: 0.5em;
+  }
+  dt {
+    clear: left;
+	float: left;
+    width: 40%;
+	text-align: right;
+    font-weight: bold;
+    color: #00bcd4;
+  }
+  dt::after {
+    content: " :"; 
+  }
+
+  dd {
+    width: 55%;
+	margin-left: 42%;
+  }
+
+
 
