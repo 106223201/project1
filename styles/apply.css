@@ -1,15 +1,9 @@
-/*
-filename: apply
-author: Luu Tri Khoa Tung
-created: October 7, 2025
-last modified: October 9, 2025
-description: apply.html
-*/
-/* heading */
+/* heading title */
 #heading{
     display: flex;
     justify-content: center;
     margin-top: 90px;
+    flex: 1;
 }
 #heading-list ul li{
     list-style-type: disc;
@@ -21,181 +15,198 @@ description: apply.html
     padding-top: 25px;
 }
 
-/* navbar */
-header{
-    position: sticky;
-    top: 0;
-}
-/* form layout */
-#apply-form{
+/* Form Layout */
+#apply-form {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
-form{
+
+form {
     box-shadow: rgba(115, 39, 64, 0.14) 0px 10px 21px 4px;
     border-radius: 20px;
     padding: 40px 60px 25px;
     margin-bottom: 50px;
-    width: 40%;
+    width: 50%;
+    background-color: #faf9fa;
 }
 
-/* name layout */
-#name{
+/* Name */
+#name {
     display: flex;
-    gap: 130px;
+    justify-content: space-between;
+    gap: 40px;
 }
-#first-name, #last-name{
+
+#first-name, #last-name {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
-#first-name input, #last-name input{
-    width: 170%;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
+
+#first-name input, #last-name input {
+    width: 100%;
+    border: none;
     border-bottom: 1.5px solid black;
     background: transparent;
-    transition: 0.3s ease;
     padding: 5px;
-}
-#first-name input:hover, #last-name input:hover{
-    transform: scaleX(1.1);
+    transition: 0.3s ease;
 }
 
-/* general-info */
-#general-info{
+#first-name input:hover, #last-name input:hover {
+    transform: scaleX(1.05);
+}
+
+/* General Info */
+#general-info {
     display: flex;
-    gap: 123px;
+    justify-content: space-between;
+    gap: 40px;
     margin-top: 20px;
 }
-#male, #female{
-    margin-left: 10px;
-}
-#gender{
+
+#date-of-birth, #gender {
+    flex: 1;
     display: flex;
     flex-direction: column;
-     margin-top: -10px;
 }
 #gender label{
-    padding-left: 10px;
+    margin-left: 1%;
 }
-#date-of-birth{
-    display: flex;
-    flex-direction: column;
-}
-#dob{
-    width: 170%;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
+
+#dob {
+    width: 100%;
+    border: none;
     border-bottom: 1.5px solid black;
     background: transparent;
-    transition: 0.3s ease;
     padding: 5px;
+    transition: 0.3s ease;
 }
-#dob:hover{
-    transform: scaleX(1.1);
+
+#dob:hover {
+    transform: scaleX(1.05);
 }
 
 /* Address */
-#address{
+#address {
     display: flex;
-    gap: 130px;
+    justify-content: space-between;
+    gap: 40px;
     margin-top: 20px;
-}
-#street-address, #suburb-town{
-    display: flex;
-    flex-direction: column;
-}
-#street-address input, #suburb-town input{
-    width: 170%;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
-    border-bottom: 1.5px solid black;
-    background: transparent;
-    transition: 0.3s ease;
-    padding: 5px;
-}
-#street-address input:hover, #suburb-town input:hover{
-    transform: scaleX(1.1);
 }
 
-/* State */
-#state-general{
-    display: flex;
-    gap: 120px;
-    margin-top: 20px;
-}
-#post-code, #state {
+#street-address, #suburb-town {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
-#post-code input{
-    width: 170%;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
+
+#street-address input, #suburb-town input {
+    width: 100%;
+    border: none;
     border-bottom: 1.5px solid black;
     background: transparent;
-    transition: 0.3s ease;
     padding: 5px;
+    transition: 0.3s ease;
 }
-#post-code input:hover{
-    transform: scaleX(1.1);
+
+#street-address input:hover, #suburb-town input:hover {
+    transform: scaleX(1.05);
 }
-#state-selection select{
+
+/* State & Postcode */
+#state-general {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+#state-selection, #post-code {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#post-code input {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid black;
+    background: transparent;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+#post-code input:hover {
+    transform: scaleX(1.05);
+}
+
+#state-selection select {
     margin-top: 5px;
-    width: 145%;
+    width: 100%;
 }
 
-/* contact */
-#contact{
+/* Contact */
+#contact {
     display: flex;
-    gap: 130px;
+    justify-content: space-between;
+    gap: 40px;
     margin-top: 20px;
 }
-#email-address, #phone-number{
+
+#email-address, #phone-number {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
-#email-address input, #phone-number input{
-    width: 170%;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
+
+#email-address input, #phone-number input {
+    width: 100%;
+    border: none;
     border-bottom: 1.5px solid black;
     background: transparent;
-    transition: 0.3s ease;
     padding: 5px;
-}
-#email-address input:hover, #phone-number input:hover{
-    transform: scaleX(1.1);
+    transition: 0.3s ease;
 }
 
-/* requirement */
-#requirement{
+#email-address input:hover, #phone-number input:hover {
+    transform: scaleX(1.05);
+}
+
+/* Requirement */
+#requirement {
     margin-top: 20px;
 }
-#skill-cols{
+
+#skill-cols {
     display: flex;
-    gap: 62px;
+    justify-content: space-between;
+    gap: 40px;
 }
-#skill-col-1 label, #skill-col-2 label{
-    margin-left: 10px;
+#skill-cols label{
+    margin-left: 2%;
 }
 
-/* other skill */
-#other-skill{
+#skill-col-1, #skill-col-2 {
+    flex: 1;
+}
+
+/* Other Skill */
+#other-skill {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
-/* button */
-#submit{
+#otherskill {
+    min-height: 80px;
+}
+
+/* Submit btn */
+#submit {
     width: 200px;
     height: 52px;
-    margin-top: 20px;
+    margin-top: 25px;
     border-radius: 100px;
     border: none;
     font-size: 15px;
@@ -203,8 +214,67 @@ form{
     color: white;
     transition: 0.3s ease;
 }
-#submit:hover{
+
+#submit:hover {
     border: 1px solid #3f51b5;
     color: #3f51b5;
     background-color: white;
+}
+
+/* Responsive Layout */
+
+/* Tablet view */
+@media (max-width: 1200px) {
+    form {
+        width: 75%;
+        padding: 30px 40px;
+    }
+    #name, #general-info, #address, #state-general, #contact, #skill-cols {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    #heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    #heading h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #heading ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #heading ul li {
+        list-style: none;
+        font-size: 1rem;
+    }
+
+    
+    form {
+        width: 90%;
+        padding: 25px;
+    }
+    #name, #general-info, #address, #state-general, #contact, #skill-cols {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #submit {
+        width: 100%;
+    }
 }
