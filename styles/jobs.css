@@ -192,6 +192,7 @@ h1 {
         }
 
         .job-content ol,
+
         .job-content ul {
             margin-left: 1.5rem;
             margin-bottom: 1rem;
@@ -237,16 +238,23 @@ h1 {
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             line-height: 2;
             overflow-wrap: anywhere;
-            width: 25%;                     /* takes up a quarter of the page */
+            width: 25%;                     
             padding: 2rem;
             margin: 2rem;
             background-color: #f9f9ff;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-right: 10%;
+          }
+
+        .float-item {
+            position: relative;
             display:flex;
             flex-direction: column;
             justify-content: flex-end;
-            margin-right: 10%
-          }
+            top: 1rem;
+            margin-left:auto;
+            margin-top: auto;
+        }
 
         aside h2 {
             font-size: 1.5rem;
