@@ -130,7 +130,7 @@ nav {
 }
 
 #nav-bar #nav-menu .nav-button {
-    /* display:flex; */
+    display:flex;
     background-color: #3f51b5;
     border: none;
     padding: 0.2rem 0.5rem;
@@ -196,7 +196,6 @@ nav {
   background:url("/images/main.jpg");
   height: 100vh;
   text-align: center;
-  padding: 6rem 5%;
   padding: 6rem 5% 6rem;
   background-size: cover;
   background-position: center;
