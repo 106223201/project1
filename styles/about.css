@@ -357,3 +357,6 @@ dl {
 * {
   transition: all 0.3s ease;
 }
+body {
+  background: linear-gradient(to left, #f9f9f9 60%, #666fa9 100%);
+}
