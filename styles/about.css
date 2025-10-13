@@ -171,12 +171,12 @@ strong {
 }
 
 .ID {
-width: 50%;
+width: 40%;
   background: #2f386a;
   border-radius: 15px;
   margin-right: 10%;
   margin-left: 5%;
-  padding: 30px 30px;
+  padding: 50px 50px;
   display: flex;
   justify-content: right;
   padding-left: 10%;
@@ -188,7 +188,7 @@ width: 50%;
 }
 
 /*Members' contributions */
-#contribution {
+#contributions {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,9 +240,14 @@ dl {
 }
 /* Group photo */
 #group-photo {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex -end;
+    top: 1rem;
+    margin-left:auto;
+    margin-top: auto;
+    
 }
 #group-photo img {
     border: 1px solid #f9f9f9;
@@ -256,28 +261,50 @@ dl {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .member-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 1024px) {
+  #group-photo, 
+  #student-ids {
+    float: none;              
+    width: 80%;
+    margin: 20px auto;       
   }
-  #contribution {
-    margin: 20px;
-    width: 100%;
-  }
-  dt, dd {
-    width: 100%;
-    margin: 0;
-    text-align: left;
-  }
-  dt {
-    margin-top: 10px;
+
+  .member-card {
+    width: 90%;
   }
 }
-@media (max-width: 480px) {
+
+/*Mobile view (screen ≤ 768px)*/
+@media (max-width: 768px) {
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
   .group-container {
     padding: 20px;
   }
+
+  #group-photo {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  #student-ids {
+    width: 100%;
+    margin: 10px 0;
+  }
+
   .member-card {
-    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
   }
 }
