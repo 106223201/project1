@@ -43,9 +43,8 @@ h1 {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            width: 85%;
+            width: 100%;
             background-color: #faf9fa;
-            font-family: 'Gotham Medium';
             display: flex;
             justify-content: center;
             align-items: center;
@@ -66,10 +65,16 @@ h1 {
             font-size: 1.1rem;
         }
 
+        #job-box {
+            width: 70%;                 /* adjust width as needed */
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
         /* SECTION STYLING */
         section {
             background: #ffffff;
-            border: 1px solid #e0e0e0;
             border-radius: 15px;
             padding: 2rem;
             transition: all 0.3s;
@@ -196,6 +201,8 @@ h1 {
         .job-content li {
             margin-bottom: 0.5rem;
             line-height: 1.6;
+            font-family: 'Gotham Thin';
+            font-weight: 700;
         }
 
         .job-content ul {
@@ -225,19 +232,18 @@ h1 {
         /* ASIDE - WHY EPASS */
         aside {
             position: sticky;
-            top: 100px;
-            background: #f8f9fa;
             border: 1px solid #e0e0e0;
             border-radius: 15px;
-            padding: 2rem;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            width: 50%;
             line-height: 2;
-            justify-content: flex-end;
-            align-items: center;
-            display:flex;
-            flex-direction: column;
-        }
+            overflow-wrap: anywhere;
+            width: 25%;                     /* takes up a quarter of the page */
+            float: right;                   /* pushes it to the right */
+            padding: 1rem;
+            margin: 2rem;
+            background-color: #f9f9ff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+          }
 
         aside h2 {
             font-size: 1.5rem;
@@ -274,10 +280,11 @@ h1 {
         }
 
         /* MOBILE RESPONSIVE */
-        @media (max-width: 1024px) {
+        @media (max-width: 1200px) {
             .container {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+                width: 85%;
             }
 
             aside {

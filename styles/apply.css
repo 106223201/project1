@@ -105,11 +105,11 @@ h1 {
 }
 
 form {
-    box-shadow:#0e11297b 0px 10px 30px 0px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border-radius: 10px;
     padding: 1rem 1rem 1rem;
     margin-bottom: 50px;
-    width: 85%;
+    width: 70%;
     background-color: #faf9fa;
     font-family: 'Gotham Medium';
     font-weight: 400;
@@ -339,7 +339,7 @@ option {
         gap: 10px;
     }
     form {
-        width: 75%;
+        width: 85%;
         padding: 30px 40px;
     }
     #name, #general-info, #address, #state-general, #contact {
