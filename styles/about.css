@@ -162,11 +162,33 @@ body {
   background: #2f386a;
   padding: 30px;
   display:flex;
-  justify-content: left;
+  justify-content: center;
   border-radius: 15px;
   margin-left: 10%;
   flex-wrap: wrap;
+  text-align:left;
+  
 }
+
+.ID {
+width: 45%;
+  background: #2f386a;
+  border-radius: 15px;
+  padding-top:0;
+  margin-right: 10%;
+  margin-left: 5%;
+  padding: 50px 50px;
+  display: flex;
+  justify-content: left;
+  padding-left: 10%;
+  flex-wrap: wrap;
+}
+
+.ID ul {
+  text-align:left;
+  color:white;
+}
+
 
 h1, h2 {
   text-align: center;
@@ -198,24 +220,6 @@ strong {
     justify-content: space-between;
     gap: 40px;
     margin-top: 20px;
-}
-
-.ID {
-width: 45%;
-  background: #2f386a;
-  border-radius: 15px;
-  margin-right: 10%;
-  margin-left: 5%;
-  padding: 50px 50px;
-  display: flex;
-  justify-content: right;
-  padding-left: 10%;
-  flex-wrap: wrap;
-}
-
-.ID ul {
-  text-align:left;
-  color:white;
 }
 
 /*Members' contributions */
