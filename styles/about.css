@@ -165,14 +165,23 @@ h1, h2 {
 }
 /*Member student ID Section*/
 
-.float-item {
+.float-left{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: auto;
+  flex-wrap:wrap;
+  width:50%;
+}
+
+.float-right {
     position: relative;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    top: 1rem;
+    /* display:flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
     margin-left:auto;
-    margin-top: auto;
+    /* margin-top: auto; */
   }
 
 

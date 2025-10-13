@@ -119,11 +119,7 @@ input {
     font-weight: 400;
 }
 
-select {
-    font-weight: 300;
-}
-
-option {
+select, option {
     font-weight: 300;
 }
 

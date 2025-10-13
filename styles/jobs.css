@@ -18,8 +18,10 @@
 }
 
 h1 {
+font-variant:normal;
   font-size: clamp(2rem, 5vw, 4rem);
   margin-bottom: 1rem;
+  font-family: 'Gotham';
   font-weight: 900;
   line-height: 1;
 }
