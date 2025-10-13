@@ -3,9 +3,9 @@ author: Nguyen Tuan Anh
 
 created: 7/10/2025
 
-last modified: 10/10/2025
+last modified: 13/10/2025
 
-description: css file for about.html page
+description: css for about.html page
 */
 
 /*IMPORT FONT*/
@@ -84,10 +84,10 @@ th, td {
 }
 
 th {
-  background-color: #73c8ec;
+  background-color: #666fa9;
   font-weight: bold;
   text-align: center;
-  color: #1f3b3b;
+  color: white;
 }
 
 td {
@@ -96,21 +96,28 @@ td {
 
 /* Table Hover Effect */
 tr:hover td {
-  background-color: #73c8ec;
+  background-color: #caccd6;
   transition: 0.2s ease-in-out;
 }
 /*Body Section*/
-#h1body{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2em;
-    color: darkslategray;
+#body-section{
+  background:url("/images/main.jpg");
+  height: 100vh;
+  height: 100vh;
+  text-align: center;
+  padding: 6rem 5% 6rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.648);
+  color: white;
+  flex: 1;
+  display:flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-#pbody{
-    text-align: center;
-    font-size: 1.2em;
-    color: dimgray;
-}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
@@ -118,22 +125,24 @@ body {
   margin: 0;
   padding: 0px;
 }
+/*Group Info Section*/
 .group-container {
   max-width: 800px;
   margin: 0 auto;
   background: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .group-container:hover {
   transform: translateY(-10px);
   transition: all 0.3s ease;
-  box-shadow: 0 10px 20px #00bcd4; 
+  box-shadow: 0 10px 20px #666fa9; 
 }
 h1, h2 {
   text-align: center;
-  color: #1f3b3b;
   margin-bottom: 20px;
 }
 .group-info p {
@@ -147,14 +156,14 @@ h1, h2 {
   font-weight: 600;
 }
 
-/* Hiệu ứng gạch chân nhẹ khi hover text */
+/* hover text */
 .group-info li:hover {
   color: #1f3b3b;
   text-shadow: 0 0 1px rgba(0,0,0,0.1);
   transform: translateX(4px);
   transition: 0.3s ease;
 }
-/*Member Intro Section*/
+/*Member student ID Section*/
 
 .social {
     padding-top: 10px;
@@ -186,14 +195,10 @@ h1, h2 {
 }
 .member-card:hover {
   transform: translateY(-10px); 
-  box-shadow: 0 10px 20px #00bcd4; 
+  box-shadow: 0 10px 20px #666fa9; 
   transition: 0.3s ease-in-out;
 }
-#student-ids {
-  float: right;
-  width: 35%;
-  margin-left: 20px;
-}
+
 /*Members' contributions */
 #contribution {
     display: flex;
@@ -201,6 +206,9 @@ h1, h2 {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 550px;
+    margin-left: 120px;
+    width: 80%;
 }
 #dd{
     text-align: center;
@@ -208,6 +216,8 @@ h1, h2 {
 dl {
     border: 3x double #00bcd4;
     padding: 0.5em;
+    margin: 0 auto;
+    width: 80%;
   }
   dt {
     clear: left;
@@ -215,7 +225,7 @@ dl {
     width: 40%;
 	text-align: right;
     font-weight: bold;
-    color: #00bcd4;
+    color: #666fa9;
   }
   dt::after {
     content: " :"; 
@@ -226,5 +236,60 @@ dl {
 	margin-left: 42%;
   }
 
-
-
+ dt:hover {
+  color: #1f3b3b;
+  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  transform: translateX(4px);
+  transition: 0.3s ease;
+  
+}
+ dd:hover {
+  color: #1f3b3b;
+  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+  transform: translateX(4px);
+  transition: 0.3s ease;
+  
+}
+/* Group photo */
+#group-photo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#group-photo img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: auto;
+}
+#group-photo img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 10px 20px #666fa9; 
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .member-grid {
+    grid-template-columns: 1fr;
+  }
+  #contribution {
+    margin: 20px;
+    width: 100%;
+  }
+  dt, dd {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  dt {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .group-container {
+    padding: 20px;
+  }
+  .member-card {
+    padding: 15px;
+  }
+}
