@@ -369,6 +369,17 @@ nav {
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
+.job-card img {
+  width: 20px;
+  margin-right: 10px;
+  position: relative;
+  top:6px;
+}
+
+.job-card p {
+  padding: 0.5rem;
+}
+
 .btn-small {
   background-color: #666fa9;
   color: white;
