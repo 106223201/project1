@@ -192,7 +192,7 @@ nav {
 
 /* Hero Section */
 .hero {
-  background:url("/images/main.jpg");
+  background:url("images/main.jpg");
   height: 100vh;
   text-align: center;
   padding: 6rem 5% 6rem;
