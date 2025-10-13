@@ -58,27 +58,43 @@ body {
 
 header {
   background:url(/images/Australia-banner-1.jpg);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
   height: 100vh;
   text-align: center;
-  padding: 6rem 5% 5rem;
+  padding: 6rem 5% 6rem;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat; 
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.671);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.648);
   color: white;
   flex: 1;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  line-height:2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.p {
+  padding: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 400;
+  margin-bottom: 1;
 }
 
 h1 {
   font: 'Gotham Bold';
   line-height: 2;
+}
+
+li {
+  font-family: 'Gotham Thin';
+  font-weight: 900;
 }
 
 /* MAIN CONTENT LAYOUT */
@@ -92,9 +108,27 @@ h1 {
 }
 
 /* JOB SECTION */
-.jobs {
-  flex: 1 1 68%;
+/* .jobs {
+  display: flex;
   min-width: 300px;
+  justify-content: center;
+} */
+
+/* .job {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+} */
+
+.job {
+    box-shadow:#666fa9 0px 10px 21px 4px;
+    border-radius: 20px;
+    padding: 2rem 2rem 2rem;
+    margin-bottom: 50px;
+    width: 60%;
+    background-color: #faf9fa;
+    font-family: 'Gotham Medium';
+    font-weight: 400;
 }
 
 .jobs h2 {
@@ -108,6 +142,9 @@ h1 {
   padding: 15px;
   margin-bottom: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width:70%;
+  justify-content: center;
+  align-items: center;
 }
 
 .job summary {
@@ -117,14 +154,22 @@ h1 {
   color: #1a1a40;
 }
 
+section {
+  width: 70%;
+  float: left;
+}
+
 /* ASIDE */
 aside {
+  float: right;
   flex: 1 1 25%;
-  border: 2px solid #4CAF50;
+  border: 2px solid #f9fff9;
   padding: 20px;
   background-color: #f9fff9;
   border-radius: 8px;
-  min-width: 250px;
+  width: 25%;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 /* FOOTER */
