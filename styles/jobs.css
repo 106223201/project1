@@ -211,38 +211,41 @@ h1 {
 
         .apply-btn {
             display: inline-block;
-            background: #4f46e5;
+            background: #3f51b5;
             color: white;
             padding: 0.8rem 2rem;
-            border-radius: 25px;
+            border-radius: 100px;
             text-decoration: none;
             font-weight: 600;
             margin-top: 1rem;
-            border: 2px solid #4f46e5;
+            border: 2px solid #3f51b5;
             transition: all 0.3s;
         }
 
         .apply-btn:hover {
-            background: #4338ca;
-            border-color: #4338ca;
-            transform: translateY(-2px);
+            border: 1px solid #3f51b5;
+            background-color: white;
+            border-color: #3f51b5;
             box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+            color: #3f51b5;
         }
 
         /* ASIDE - WHY EPASS */
         aside {
-            position: sticky;
             border: 1px solid #e0e0e0;
             border-radius: 15px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
             line-height: 2;
             overflow-wrap: anywhere;
             width: 25%;                     /* takes up a quarter of the page */
-            float: right;                   /* pushes it to the right */
-            padding: 1rem;
+            padding: 2rem;
             margin: 2rem;
             background-color: #f9f9ff;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-right: 10%
           }
 
         aside h2 {
@@ -289,6 +292,7 @@ h1 {
 
             aside {
                 position: static;
+                float:right;
             }
 
             .nav-links {
