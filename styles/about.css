@@ -131,7 +131,7 @@ table {
 
 /*Hero Section*/
 #hero-section{
-  background:url(styles\images\Background.png); 
+  background:url(images/Background.png); 
   height: 100vh;
   text-align: center;
   padding: 6rem 5% 6rem;
