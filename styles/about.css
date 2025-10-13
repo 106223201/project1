@@ -165,6 +165,17 @@ h1, h2 {
 }
 /*Member student ID Section*/
 
+.float-item {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 1rem;
+    margin-left:auto;
+    margin-top: auto;
+  }
+
+
 .social {
     padding-top: 10px;
     width: 2rem;
@@ -267,6 +278,7 @@ dl {
     transition: 0.3s ease-in-out;
     box-shadow: 0 10px 20px #666fa9; 
 }
+
 /* Responsive */
 @media (max-width: 768px) {
   .member-grid {
