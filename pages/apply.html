@@ -44,21 +44,14 @@
     <section id="apply-form">
         <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
             <h2>Apply for this job</h2>
+            <section id="job-reference">
+                <label for="refnum">Job Reference Numbers</label>
+                <select name="number" id="refnum">
+                    <option value="data-analyst">DA102</option>
+                    <option value="aiml-engineer">AI657</option>
+                </select>
+            </section>
             <section id="general">
-                    <section id="state-selection">
-                        <label for="state">State</label>
-                        <select name="statelist" id="state">
-                            <option value="VIC">Victoria</option>
-                            <option value="NSW">New South Wales</option>
-                            <option value="QLD">Queensland</option>
-                            <option value="NT">Northern Territory</option>
-                            <option value="WA">Western Australia</option>
-                            <option value="SA">South Australia</option>
-                            <option value="TAS">Tasmania</option>
-                            <option value="ACT">Australian Capital Territory</option>
-                        </select>
-                    </section>
-
                 <section id="name">
                     <section id="first-name">
                         <label for="fname">First Name</label>
