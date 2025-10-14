@@ -267,8 +267,8 @@ dl {
   }
 }
 
-/*Mobile view (screen ≤ 768px)*/
-@media (max-width: 750px) {
+/*Mobile view */
+@media (max-width: 768px) {
 
   h1, h2, h3 {
     text-align: center;
@@ -280,11 +280,13 @@ dl {
   }
 
   .group-container {
-    margin-left: 10%;
+    margin-left: 0%;
+    margin-right:0%;
     }
 
   .ID {
-    margin-right:10%;
+    margin-right: 0%;
+    margin-left: 0%;
   }
 
   .member-card {
@@ -296,19 +298,9 @@ dl {
     flex-direction: column;
   }
 
-  table {
-    font-size: 0.8rem;
-    width: 85%;
-  }
-
-  th, td , .muted, .small, .skills , tbody {
-    padding: 5px;
+  .muted, .small, .skills , tbody, thead {
+    font-size: 0.4rem;
     width: 100%;
-    font-size: 0.6rem;
-
-  }
-
-  td {
-    font-size: 0.6rem
+    flex-wrap:wrap;
   }
 }
