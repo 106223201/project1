@@ -425,8 +425,6 @@ footer {
   background-color: #0b0625;
   color: rgb(255, 255, 255);
   padding: 1rem 0.5rem;
-  margin-top: auto;
-  height: 4rem;
   display: flex;
   justify-content: center;
 }
@@ -449,6 +447,14 @@ footer a:visited {
   text-decoration: none;
   color: white;
 }
+
+.footer-bottom {
+    max-width: 1400px;
+    margin: auto auto 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
 
         /* Mobile styles */
         @media (max-width: 768px) {
@@ -538,7 +544,7 @@ footer a:visited {
 
 
         /* TABLET */
-        @media (width: 769px) and (max-width: 1024px) {
+        @media (max-width: 769px) and (max-width: 1024px) {
             .hero {
                 padding: 5rem 5%;
             }
@@ -548,8 +554,8 @@ footer a:visited {
             }
         }
 
-        @media (max-width: 650px) {
-          footer p {
+        @media (max-width: 600px) {
+          .footer-bottom {
             font-size: 0.8rem;
           }
         }
