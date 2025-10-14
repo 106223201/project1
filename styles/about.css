@@ -98,30 +98,6 @@ tbody td{
   table{font-size:0.92rem}
 }
 
-#interests-table{
-    margin: 0 auto;
-    border-collapse:separate;
-    padding: 1rem 1rem;
-    width: 70%;
-    border-collapse: collapse;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    margin-bottom: 50px;    
-}
-#interests-table th, td{
-    padding: 8px 12px;
-    text-align: center;
-    line-height: 2;
-}
-
-#interests-table:hover {
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-  box-shadow: 0 10px 20px #0c133ea5; 
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -167,16 +143,13 @@ body {
   margin-left: 10%;
   flex-wrap: wrap;
   text-align:left;
-  
 }
 
 .ID {
 width: 45%;
   background: #2f386a;
   border-radius: 15px;
-  padding-top:0;
   margin-right: 10%;
-  margin-left: 5%;
   padding: 50px 50px;
   display: flex;
   justify-content: left;
@@ -264,7 +237,7 @@ dl {
     top: 1rem;
     margin-left:auto;
     margin-top: auto;
-    margin-right: 10%;
+    margin-right: auto;
     
 }
 #group-photo img {
@@ -279,8 +252,7 @@ dl {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  #group-photo, 
-  #student-ids {
+  #group-photo {
     float: none;              
     width: 80%;
     margin: 20px auto;       
@@ -307,9 +279,12 @@ dl {
     margin: 15px 0;
   }
 
-  #student-ids {
-    width: 100%;
-    margin: 10px 0;
+  .group-container {
+    margin-left: 10%;
+    }
+
+  .ID {
+    margin-right:10%;
   }
 
   .member-card {
