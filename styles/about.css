@@ -237,7 +237,6 @@ strong {
     text-align: center;
 }
 dl {
-    border: 3x double #00bcd4;
     padding: 0.5em;
     margin: 0 auto;
     width: 80%;
@@ -250,13 +249,10 @@ dl {
     font-weight: bold;
     color: #666fa9;
   }
-  dt::after {
-    content: " :"; 
-  }
 
   dd {
-    width: 55%;
-	margin-left: 42%;
+    width: 45%;
+	  margin-left: 42%;
   }
   
 /* Group photo */
@@ -300,14 +296,10 @@ dl {
 }
 
 /*Mobile view (screen ≤ 768px)*/
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
   h1, h2, h3 {
     text-align: center;
-  }
-
-  .group-container {
-    padding: 20px;
   }
 
   #group-photo {
@@ -325,9 +317,13 @@ dl {
     text-align: center;
   }
 
+  dl {
+    flex-direction: column;
+  }
+
   table {
     font-size: 0.8rem;
-    width: 80%;
+    width: 85%;
   }
 
   th, td , .muted, .small, .skills , tbody {
@@ -338,6 +334,6 @@ dl {
   }
 
   td {
-    font-size: 0.5rem
+    font-size: 0.6rem
   }
 }
