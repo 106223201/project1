@@ -293,6 +293,10 @@ dl {
   .member-card {
     width: 90%;
   }
+
+  table {
+    width:70%;
+  }
 }
 
 /*Mobile view (screen ≤ 768px)*/
@@ -322,10 +326,18 @@ dl {
   }
 
   table {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    width: 80%;
   }
 
-  th, td {
-    padding: 10px;
+  th, td , .muted, .small, .skills , tbody {
+    padding: 5px;
+    width: 100%;
+    font-size: 0.6rem;
+
+  }
+
+  td {
+    font-size: 0.5rem
   }
 }
