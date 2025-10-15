@@ -99,7 +99,7 @@ tbody td{
 }
 
 table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
   text-align: left;
   font-size: 1rem;
@@ -263,7 +263,7 @@ dl {
   }
 
   table {
-    width:70%;
+    width:90%;
   }
 }
 
@@ -299,7 +299,7 @@ dl {
   }
 
   .muted, .small, .skills , tbody, thead {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     width: 100%;
     flex-wrap:wrap;
   }
