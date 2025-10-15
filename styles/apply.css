@@ -359,7 +359,7 @@ select, option {
 }
 
 /* Mobile view */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #heading {
         display: flex;
         flex-direction: column;
@@ -388,7 +388,6 @@ select, option {
         font-size: 1rem;
     }
 
-    
     form {
         width: 90%;
         padding: 25px;

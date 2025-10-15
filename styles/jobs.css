@@ -68,7 +68,7 @@ h1 {
         }
 
         #job-box {
-            width: 70%;                 /* adjust width as needed */
+            width: 90%;                 /* adjust width as needed */
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -295,11 +295,6 @@ h1 {
 
         /* MOBILE RESPONSIVE */
         @media (max-width: 1200px) {
-            .container {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                width: 85%;
-            }
 
             aside {
                 position: static;
@@ -312,9 +307,6 @@ h1 {
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 2rem 5%;
-            }
 
             section {
                 padding: 1.5rem;
